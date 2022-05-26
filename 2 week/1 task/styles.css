@@ -1,0 +1,18 @@
+.heading-1 {
+    color: red
+}
+.heading-2 {
+    color:rgb(21, 134, 240)
+}
+.heading-3 {
+    color: #19ce4f
+}
+.heading-4 {
+    color: hsl(41, 85%, 49%)
+}
+
+.heading-container {
+    background-color: rgb(32, 29, 29);
+    padding: 10px;
+    border-radius: 10px;
+}

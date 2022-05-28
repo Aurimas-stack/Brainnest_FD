@@ -1,10 +1,11 @@
 *,
 *::before,
 *::after {
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
+
 html {
-    font-size:16px;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -31,12 +32,12 @@ body {
 
 
 .header-footer {
-    width:100%; 
+    width: 100%;
 }
 
 .header {
     top: 0;
-    position:absolute;
+    position: absolute;
 }
 
 .header nav {
@@ -55,8 +56,9 @@ body {
     font-size: 18px;
     color: #E5E7EB;
 }
+
 .hero {
-    margin-top:75px;
+    margin-top: 75px;
     padding: 50px 0;
     flex-direction: row;
     align-items: center;
@@ -86,9 +88,9 @@ body {
 .hero button {
     background-color: #3882F6;
     padding: 10px;
-    border:none;
+    border: none;
     border-radius: 10px;
-    width:100px;
+    width: 100px;
 }
 
 .hero div:last-child {
@@ -107,23 +109,24 @@ body {
 .information {
     flex-direction: column;
     align-items: center;
-    padding:50px 0;
+    padding: 50px 0;
 }
 
 .information h2 {
     font-size: 36px;
-    font-weight:900;
+    font-weight: 900;
     color: #1F2937
 }
 
 .blue-box-container {
-    flex-direction: row; 
+    flex-direction: row;
 }
+
 .blue-box {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:200px;
+    width: 200px;
     height: 200px;
 }
 
@@ -136,7 +139,7 @@ body {
 
 .blue-box p {
     margin: 0;
-    width:65%;
+    width: 65%;
     font-size: 0.9rem;
     text-align: center;
     font-weight: 300;
@@ -146,25 +149,25 @@ body {
     background-color: #E5E7EB;
     flex-direction: column;
     align-items: center;
-    padding:50px;
+    padding: 50px;
 }
 
 .quote div {
     flex-direction: column;
     align-items: center;
-    width:48%;
-    padding:30px;
+    width: 48%;
+    padding: 30px;
 }
 
 .quote p {
-    margin:0;
+    margin: 0;
 }
 
 .quote p:first-child {
     font-size: 36px;
     font-style: italic;
     font-weight: 300;
-    color:#1F2937;
+    color: #1F2937;
 }
 
 .quote p:last-child {
@@ -175,8 +178,8 @@ body {
 .action {
     flex-direction: column;
     align-items: center;
-    padding:50px;
-    color:#F9FAF8;
+    padding: 50px;
+    color: #F9FAF8;
 }
 
 
@@ -193,11 +196,11 @@ body {
 }
 
 .action button {
-    border:2px solid #F9FAF8;
+    border: 2px solid #F9FAF8;
     background-color: #3882F6;
-    padding:10px;
+    padding: 10px;
     border-radius: 10px;
-    color:#F9FAF8;
+    color: #F9FAF8;
     width: 120px;
     font-weight: 600;
 }
@@ -205,6 +208,6 @@ body {
 .footer {
     flex-direction: column;
     align-items: center;
-    padding:30px;
-    color:#F9FAF8;
+    padding: 30px;
+    color: #F9FAF8;
 }

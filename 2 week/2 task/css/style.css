@@ -1,27 +1,35 @@
 body {
     background-color: #041311;
 }
+
 .container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .container h1 {
     color: #e0f00a;
+    letter-spacing: 1px;
 }
-.container h1, a {
+
+.container h1,
+a {
     font-family: monospace;
 }
+
 .container img {
     border-radius: 10px;
-    border:2px solid #fff;
+    border: 3px solid #fff;
 }
+
 .container a {
     color: #e0f00a;
     font-size: 1.3rem;
     margin-top: 30px;
-    text-decoration: none; 
+    text-decoration: none;
 }
+
 .container a:hover {
-    color:#08acf8;
+    color: #08acf8;
 }

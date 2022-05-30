@@ -14,6 +14,9 @@ body {
     min-height: 100%;
 }
 
+:root {
+    --dark-color:#1F2937;
+}
 .flex-container {
     display: flex;
 }
@@ -23,13 +26,12 @@ body {
 }
 
 .dark-color {
-    background-color: #1F2937;
+    background-color: var(--dark-color);
 }
 
 .light-color {
     color: #F9FAF8;
 }
-
 
 .header-footer {
     width: 100%;

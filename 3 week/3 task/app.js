@@ -6,30 +6,38 @@ const computerPlay = () => {
 const playRound = (playerSelection, computerSelection) => {
   const playerWord = playerSelection.toLowerCase();
   const computerWord = computerSelection.toLowerCase();
-  let gameCondition = false;
+  let winCondition = false;
+
+  if(playerWord === computerWord) {
+    return `Even round, you've both selected ${playerWord}!`;
+  }
 
   if (playerWord === "rock" && computerWord !== "paper") {
-    gameCondition = true;
+    winCondition = true;
   }
 
   if (playerWord === "paper" && computerWord !== "scissors") {
-    gameCondition = true;
+    winCondition = true;
   }
 
   if (playerWord === "scissors" && computerWord !== "rock") {
-    gameCondition = true;
+    winCondition = true;
   }
 
-  return gameCondition
+  return winCondition
     ? `You win! ${playerWord} beats ${computerWord}.`
     : `You lose! ${computerWord} beats ${playerWord}.`
 }
 
 const game = () => {
     const userInput = prompt("ROCK, PAPER, SCISSORS")
+
+    if (userInput.length === 0) return;
+ 
     for(let i = 0; i < 5; i++) {
         console.log(playRound(userInput, computerPlay()))
     }
+     
 }
 
-game();
+game()

@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family:Andale Mono, monospace;
+  font-size:16px;
+}
+body {
+  margin:0;
+  min-height: 100vh;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
+}
+.flex-container {
+  display: flex;
+}
+.container {
+  max-width:1080px;
+  margin:20px auto;
+  flex-direction:column;
+  align-items:center;
+}
+.calculator {
+  position:relative;
+  flex-direction:column;
+  align-items:center;
+  width:416px;
+  border-radius:10px;
+  border: 8px solid #042940;
+  background-color: #005C53;
+  -webkit-box-shadow: 1px 1px 22px 5px rgba(0,0,0,0.46); 
+  box-shadow: 1px 1px 22px 5px rgba(0,0,0,0.46);
+}
+#result_screen {
+  height: 30px;
+  background-color:#000;
+  width:95%;
+  word-wrap:break-word;
+  text-align:right;
+  color:#fff;
+  line-height:20px;
+  padding:5px;
+  font-size:1.5rem;
+}
+#calculation_screen {
+  margin-top:10px;
+  height:30px;
+  background-color:#000;
+  width:95%;
+  color:orange;
+  border-radius: 10px 10px 0 0;
+  text-align:right;
+  line-height:20px;
+  padding:5px;
+  font-size:1.2rem;
+}
+.calculator > .buttons {
+  margin: 10px auto;
+  width:95%;
+  display:block;
+}
+.buttons > button {
+  width:87px;
+  height:70px;
+  position:relative;
+  display:inline-block;
+  border:1px solid #9FC131;
+  background-color:#008F81;
+  font-size:2rem;
+  font-weight: solid;
+  color:#fff;
+  border-radius:10px;
+}
+.buttons > button:hover {
+  color:#000;
+ -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, inset 0px 0px 0px 0px rgba(0,0,0,0); 
+box-shadow: inset 0px 0px 8px 5px #000, 2px 5px 16px 0px #0B325E, inset 0px 0px 0px 0px rgba(0,0,0,0);
+  border: none;
+}
+.buttons > #clear {
+  width:184px;
+  height:70px;
+  background-color:#af2328;
+}
+.buttons > #clear:hover {
+  border: none;
+  cursor:pointer;
+}
+.buttons > #divide, #multiply, #subtract, #add {
+  background-color:#5C5300;
+}
+.buttons > #divide:hover, #multiply:hover, #subtract:hover, #add:hover {
+  border: none;
+}
+.buttons > #equals {
+  width: 96px;
+  height:140px;
+  position:absolute;
+  bottom:10px;
+  background-color: #074870;
+}
+.buttons > #equals:hover {
+  border: none;
+  cursor:pointer;
+}
+.buttons > #zero {
+  width:184px;
+}

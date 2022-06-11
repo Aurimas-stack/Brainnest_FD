@@ -59,10 +59,12 @@ const calculate = () => {
       displayArray[0] = "You can't divide by zero!";
       return;
     }
-
     operate(calculationArray[0], calculationArray[2], calculationArray[1]);
     calculationArray.splice(1, 2);
   }
+
+  displayArray.length = 0;
+  displayArray[0] = calculationArray[0];
 };
 
 const calculator = (action) => {
@@ -121,8 +123,6 @@ const calculator = (action) => {
 
   if (currentPressedBtn === "=") {
     calculate();
-    displayArray.length = 0;
-    displayArray[0] = calculationArray[0];
   }
 };
 

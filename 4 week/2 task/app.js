@@ -11,6 +11,10 @@ const divide = (number_1, number_2) => {
   return number_1 / number_2;
 };
 
+function isNumber(n){
+    return typeof n == 'number' && !isNaN(n) && isFinite(n);
+ }
+
 const calculationArray = [];
 const displayArray = [];
 const currentPressedBtnArray = [];
@@ -19,8 +23,12 @@ let currentPressedBtn = null;
 const operate = (numb1, numb2, operator) => {
   const number_1 = +numb1;
   const number_2 = +numb2;
-  const patternInteger = /^-?[0-9]+$/;
+  const integerRegex = /^-?[0-9]+$/;
   let calculationResult;
+
+  if(!isNumber(number_1) || !isNumber(number_2)) {
+      return;
+  }
 
   if (operator === "+") {
     calculationResult = add(number_1, number_2);
@@ -36,7 +44,7 @@ const operate = (numb1, numb2, operator) => {
     calculationResult = divide(number_1, number_2);
   }
 
-  if (!patternInteger.test(calculationResult)) {
+  if (!integerRegex.test(calculationResult)) {
     calculationResult = calculationResult.toFixed(2);
   }
 
@@ -104,6 +112,9 @@ const calculator = (action) => {
   if (operators.includes(currentPressedBtn)) {
     currentPressedBtnArray[0] = currentPressedBtn;
   }
+
+  console.log(currentPressedBtnArray)
+  console.log(calculationArray)
 
   if (
     operators.includes(currentPressedBtn) &&

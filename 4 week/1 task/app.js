@@ -34,7 +34,7 @@ const winRounds = {
 }
 
 const game = (userSelection) => {
-  const userPick = userSelection.toLowerCase();;
+  const userPick = userSelection.toLowerCase();
   const computerPick = computerPlay().toLowerCase();
   const condition = playRound(userPick, computerPick);
 
@@ -44,7 +44,7 @@ const game = (userSelection) => {
   }
 
   if(winRounds.computer === 5) {
-    textOutput === "Computer won!";
+    textOutput = "Computer won!";
     return;
   }
 

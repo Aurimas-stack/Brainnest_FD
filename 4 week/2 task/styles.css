@@ -33,26 +33,16 @@ body {
   -webkit-box-shadow: 1px 1px 22px 5px rgba(0,0,0,0.46); 
   box-shadow: 1px 1px 22px 5px rgba(0,0,0,0.46);
 }
-#result_screen {
-  height: 30px;
-  background-color:#000;
-  width:95%;
-  word-wrap:break-word;
-  text-align:right;
-  color:#fff;
-  line-height:20px;
-  padding:5px;
-  font-size:1.5rem;
-}
+
 #calculation_screen {
   margin-top:10px;
-  height:30px;
+  height:50px;
   background-color:#000;
   width:95%;
   color:orange;
   border-radius: 10px 10px 0 0;
   text-align:right;
-  line-height:20px;
+  
   padding:5px;
   font-size:1.2rem;
 }
